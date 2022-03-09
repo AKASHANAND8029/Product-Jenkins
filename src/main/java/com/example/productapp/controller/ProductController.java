@@ -11,7 +11,7 @@ import java.util.UUID;
 
 @RestController
 public class ProductController {
-
+    //Added Post Method
     @PostMapping("/products")
     public ResponseEntity<Product> displayProduct(Product product)
     {
@@ -20,7 +20,7 @@ public class ProductController {
 
     @GetMapping("/products")
     public ResponseEntity<Product> createProduct(){
-        return ResponseEntity.ok(Product.builder().productId(UUID.randomUUID().toString()).productName("Pencil").price(15.0).build());
+        return ResponseEntity.ok(Product.builder().productId(UUID.randomUUID().toString()).productName("Book").price(65.0).build());
     }
 
 
