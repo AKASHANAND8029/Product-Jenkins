@@ -17,7 +17,7 @@ public class ProductController {
     {
         return ResponseEntity.status(HttpStatus.CREATED).body(product);
     }
-
+    //Added Get Method
     @GetMapping("/products")
     public ResponseEntity<Product> createProduct(){
         return ResponseEntity.ok(Product.builder().productId(UUID.randomUUID().toString()).productName("Book").price(65.0).build());
