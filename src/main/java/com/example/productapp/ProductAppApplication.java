@@ -23,11 +23,12 @@ public class ProductAppApplication implements CommandLineRunner {
 
     @Override
     public void run(String... args) throws Exception {
-        productRepository.save(new Product(UUID.randomUUID().toString(),"Pen",20));
-        productRepository.save(new Product(UUID.randomUUID().toString(),"Pencil",21));
-        productRepository.save(new Product(UUID.randomUUID().toString(),"Book",22));
-        productRepository.save(new Product(UUID.randomUUID().toString(),"Colors",23));
-        productRepository.save(new Product(UUID.randomUUID().toString(),"Notebooks",24));
+//        productRepository.save(new Product(UUID.randomUUID().toString(),"Pen",20));
+//        productRepository.save(new Product(UUID.randomUUID().toString(),"Pencil",21));
+//        productRepository.save(new Product(UUID.randomUUID().toString(),"Book",22));
+//        productRepository.save(new Product(UUID.randomUUID().toString(),"Colors",23));
+//        productRepository.save(new Product(UUID.randomUUID().toString(),"Notebooks",24));
+        productRepository.save(new Product(UUID.randomUUID().toString(),"Stickers",24));
 
     }
 }
